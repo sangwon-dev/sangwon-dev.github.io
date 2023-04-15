@@ -19,7 +19,14 @@ header {
   color: white;
 }
 
-.container {
+.container2 {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +52,7 @@ button#generateBtn {
   background-color: #4caf50;
   color: white;
   border: none;
+  margin-right: 8px;
   margin-top: 1rem;
 }
 
@@ -52,6 +60,7 @@ button#copyBtn {
   background-color: #f0f0f0;
   color: #333;
   border: 1px solid #ccc;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -66,7 +75,6 @@ button#copyBtn {
   }
 
   button#generateBtn {
-    margin-top: 0;
     margin-right: 1rem;
   }
 }
