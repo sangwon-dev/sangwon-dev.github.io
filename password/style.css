@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -51,7 +52,6 @@ button#copyBtn {
   background-color: #f0f0f0;
   color: #333;
   border: 1px solid #ccc;
-  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {

@@ -12,7 +12,8 @@
       name="keywords"
       content="비밀번호 생성기, 비밀번호 생성, 랜덤 비밀번호"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../internal-link.css" />
     <link rel="icon" type="image/svg+xml" href="../public/icon/password.svg" />
     <!-- Google tag (gtag.js) -->
     <script
@@ -39,12 +40,23 @@
       <h1>비밀번호 생성기</h1>
     </header>
     <main>
-      <div class="container">
-        <input type="text" id="password" readonly />
+      <div class="container2">
+        <input
+          type="text"
+          id="password"
+          readonly
+          placeholder="비밀번호 나오는 곳"
+        />
         <button id="generateBtn">생성하기</button>
         <button id="copyBtn">복사하기</button>
       </div>
     </main>
+    <section class="container">
+      <div class="box">
+        <h2 class="title">복리 계산기</h2>
+        <a class="link" href="../calc/index.html">바로가기</a>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
