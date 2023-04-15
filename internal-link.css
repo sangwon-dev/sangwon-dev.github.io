@@ -1,11 +1,11 @@
-.container {
+.interner-link-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.box {
+.interner-link-container .box {
   width: 300px;
   height: 150px;
   background-color: #f5f5f5;
@@ -19,18 +19,18 @@
   align-items: center;
 }
 
-.box:hover {
+.interner-link-container .box:hover {
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.title {
+.interner-link-container .title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.link {
+.interner-link-container .link {
   font-size: 1rem;
   color: #333;
   text-decoration: none;
@@ -40,7 +40,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.link:hover {
+.interner-link-container .link:hover {
   background-color: #333;
   color: #fff;
 }
