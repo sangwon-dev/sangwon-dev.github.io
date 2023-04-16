@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="複利計算機" />
+    <meta property="og:image" content="https://ibb.co/qs1Mhdk" />
+    <meta
+      property="og:description"
+      content="投資や貯金のためのシンプルな複利計算機"
+    />
+    <meta name="title" content="複利計算機" />
+    <meta name="subject" content="複利計算機" />
+    <meta name="author" content="comccaneer" />
+    <meta name="description" content="投資や貯金のためのシンプルな複利計算機" />
+    <meta
+      name="keywords"
+      content="複利計算機, 複利計算, 預金計算機, 預金計算, 月複利計算機, 日複利計算機, 年複利計算機"
+    />
+    <title>複利計算機</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>複利計算機</h1>
+    </header>
+    <main>
+      <form id="calculator">
+        <div class="input-group">
+          <label for="initialAmount">元金:</label>
+          <input type="number" id="initialAmount" required /> 円
+        </div>
+        <div class="input-group">
+          <label for="interestRate">目標利回り (%):</label>
+          <input type="number" id="interestRate" required /> %
+        </div>
+        <div class="input-group">
+          <label for="period">計算期間:</label>
+          <input type="number" id="period" required />
+          <select id="periodUnit" style="width: 80px">
+            <option value="days">日</option>
+            <option value="months">月</option>
+            <option value="years">年</option>
+          </select>
+        </div>
+        <button type="submit">計算する</button>
+      </form>
+      <h2 id="result"></h2>
+      <table id="resultTable" style="display: none">
+        <thead>
+          <tr>
+            <th>期間</th>
+            <th>利益</th>
+            <th>総額</th>
+            <th>利率</th>
+          </tr>
+        </thead>
+        <tbody id="resultTableBody"></tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
