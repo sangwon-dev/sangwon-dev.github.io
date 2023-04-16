@@ -1,5 +1,8 @@
-* {
-  box-sizing: border-box;
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
@@ -7,49 +10,88 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
 header {
-  background: #333;
-  color: #fff;
-  text-align: center;
+  background-color: #333;
   padding: 1rem;
+  text-align: center;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  color: white;
 }
 
 main {
-  padding: 2rem;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 960px;
 }
 
-ul {
-  list-style: none;
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-ul li {
+.blog-card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blog-card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 1rem;
+}
+
+.blog-card h2 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-ul li a {
+.blog-card p {
+  margin-bottom: 1rem;
+}
+
+.blog-card a {
+  background-color: #333;
+  border-radius: 4px;
+  color: white;
   display: inline-block;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
+  font-size: 0.9rem;
   padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
-ul li a:hover {
-  background: #555;
+.blog-card a:hover {
+  background-color: #555;
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 1rem;
+/* Media queries */
+@media (min-width: 768px) {
+  .blog-card {
+    width: calc(33.333% - 1rem);
   }
+}
 
-  main {
-    padding: 1rem;
+@media (max-width: 767px) {
+  .blog-cards {
+    flex-direction: column;
   }
 }
