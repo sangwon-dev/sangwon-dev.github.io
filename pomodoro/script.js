@@ -55,7 +55,7 @@ function startTimer() {
         pauseButton.style.display = 'none';
         resumeButton.style.display = 'none';
 
-        // 포모도로 사이클이 끝난 경우 새로운 타이머 설정
+        // 뽀모도로 사이클이 끝난 경우 새로운 타이머 설정
         if (startButton.classList.contains('break')) {
           startButton.classList.remove('break');
           minutesDisplay.textContent = '25';
