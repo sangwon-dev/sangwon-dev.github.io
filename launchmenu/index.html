@@ -3,28 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>비밀번호 생성기</title>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="비밀번호 생성기" />
+    <meta property="og:title" content="점심 메뉴 추천 룰렛" />
     <meta property="og:image" content="https://ibb.co/bRvBnd7" />
-    <meta name="title" content="랜덤 비밀번호 생성" />
-    <meta name="subject" content="랜덤 비밀번호 생성" />
+    <meta name="title" content="점심 메뉴 추천 룰렛" />
+    <meta name="subject" content="점심 메뉴 추천 룰렛" />
     <meta name="author" content="comccaneer" />
     <meta
       property="og:description"
-      content="랜덤 비밀번호를 생성해주는 비밀번호 생성기입니다."
+      content="점심 메뉴 추천 룰렛을 이용해 맛있는 음식을 고르세요!"
     />
     <meta
       name="description"
-      content="랜덤 비밀번호를 생성해주는 비밀번호 생성기입니다."
+      content="점심 메뉴 추천 룰렛을 이용해 맛있는 음식을 고르세요!"
     />
     <meta
       name="keywords"
-      content="비밀번호 생성기, 비밀번호 생성, 랜덤 비밀번호"
+      content="점심, 메뉴, 추천, 룰렛, 음식, 점심 메뉴 추천, 점심 메뉴 룰렛"
     />
+    <title>점심 메뉴 추천 룰렛</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../internal-link.css" />
-    <link rel="icon" type="image/svg+xml" href="../public/icon/password.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../public/icon/launchmenu.svg"
+    />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -47,22 +51,15 @@
   </head>
   <body>
     <header>
-      <h1>비밀번호 생성기</h1>
+      <h1>점심 메뉴 추천 룰렛</h1>
     </header>
-    <main>
-      <div class="container2">
-        <div class="container3">
-          <input
-            type="text"
-            id="password"
-            readonly
-            placeholder="비밀번호 나오는 곳"
-          />
-          <button id="generateBtn">생성하기</button>
-          <button id="copyBtn">복사하기</button>
-        </div>
+    <div class="container">
+      <div class="card-container">
+        <div class="no-card-area">메뉴가 추천될 영역입니다.</div>
       </div>
-    </main>
+      <button id="recommend-button">메뉴 추천 받기</button>
+    </div>
+
     <section class="interner-link-container">
       <div class="box">
         <h2 class="title">다른 기능 살펴보기</h2>
@@ -76,12 +73,12 @@
             <a class="link" href="../lotto/index.html">바로가기</a>
           </li>
           <li>
-            <span class="link-name">랜덤 점심 메뉴 추천</span>
-            <a class="link" href="../launchmenu/index.html">바로가기</a>
+            <span class="link-name">랜덤 비밀번호 생성기</span>
+            <a class="link" href="../password/index.html">바로가기</a>
           </li>
         </ul>
       </div>
     </section>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

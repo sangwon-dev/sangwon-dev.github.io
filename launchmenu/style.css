@@ -1,0 +1,127 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #4caf50;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-card-area {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-back {
+  border: #4caf50;
+  color: #2f2f2f;
+  font-weight: bold;
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+#recommend-button {
+  padding: 10px 20px;
+  color: #4caf50;
+  background-color: white;
+  border: 1px solid #4caf50;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#recommend-button:hover {
+  background-color: #3f8e3d;
+  color: white;
+}
+
+/* Add these lines to styles.css */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
