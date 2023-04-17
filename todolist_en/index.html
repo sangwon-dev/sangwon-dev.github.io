@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Todo List App" />
+    <meta name="subject" content="Todo List App" />
+    <meta name="author" content="comccaneer" />
+    <meta
+      name="description"
+      content="A simple and mobile-friendly todolist app."
+    />
+    <meta
+      name="keywords"
+      content="todo list, task management, productivity, mobile friendly"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Todo List App" />
+    <meta property="og:image" content="https://ibb.co/PjnpfZM" />
+    <meta
+      property="og:description"
+      content="A simple and mobile-friendly todolist app."
+    />
+    <title>Todo List | Task Management</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg+xml" href="../public/icon/todolist.svg" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WN4DKS5TCZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-WN4DKS5TCZ');
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6451550267398782"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Todo List | Task Management</h1>
+    </header>
+    <main>
+      <form id="addTaskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Add new task..."
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="todoList"></ul>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
