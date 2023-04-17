@@ -53,15 +53,16 @@
       <form id="calculator">
         <div class="input-group">
           <label for="initialAmount">元金:</label>
-          <input type="number" id="initialAmount" required /> 円
+          <input type="text" id="initialAmount" required value="1,000,000" />
+          円
         </div>
         <div class="input-group">
           <label for="interestRate">目標利回り (%):</label>
-          <input type="number" id="interestRate" required /> %
+          <input type="number" id="interestRate" required value="10" /> %
         </div>
         <div class="input-group">
           <label for="period">計算期間:</label>
-          <input type="number" id="period" required />
+          <input type="number" id="period" required value="20" />
           <select id="periodUnit" style="width: 80px">
             <option value="days">日</option>
             <option value="months">月</option>

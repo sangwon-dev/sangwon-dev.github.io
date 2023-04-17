@@ -55,22 +55,24 @@
     </header>
     <main>
       <form id="calculator">
-        <label for="initialAmount">원금:</label>
-        <input type="text" id="initialAmount" required /> 원
-        <br />
-
-        <label for="interestRate">목표 수익률 (%):</label>
-        <input type="number" id="interestRate" required /> %
-        <br />
-
-        <label for="period">계산 기간:</label>
-        <input type="number" id="period" required />
-        <select id="periodUnit" style="width: 80px">
-          <option value="days">일</option>
-          <option value="months">월</option>
-          <option value="years">년</option>
-        </select>
-        <br />
+        <div class="input-group">
+          <label for="initialAmount">원금:</label>
+          <input type="text" id="initialAmount" required value="10,000,000" />
+          원
+        </div>
+        <div class="input-group">
+          <label for="interestRate">목표 수익률 (%):</label>
+          <input type="number" id="interestRate" required value="10" /> %
+        </div>
+        <div class="input-group">
+          <label for="period">계산 기간:</label>
+          <input type="number" id="period" required value="20" />
+          <select id="periodUnit" style="width: 80px">
+            <option value="days">일</option>
+            <option value="months">월</option>
+            <option value="years">년</option>
+          </select>
+        </div>
 
         <button type="submit">계산하기</button>
       </form>

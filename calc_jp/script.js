@@ -1,6 +1,12 @@
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
+document
+  .getElementById('initialAmount')
+  .addEventListener('blur', function (event) {
+    const value = event.target.value.replace(/[^0-9]/g, '');
+    event.target.value = numberWithCommas(value);
+  });
 
 document
   .getElementById('calculator')
