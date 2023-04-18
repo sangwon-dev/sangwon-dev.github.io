@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Style the header */
+header {
+  background-color: #3498db;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+canvas {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Make the form mobile-friendly */
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%;
+  }
+}
