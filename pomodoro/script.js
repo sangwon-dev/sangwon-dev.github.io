@@ -55,6 +55,24 @@ function startTimer() {
         pauseButton.style.display = 'none';
         resumeButton.style.display = 'none';
 
+        // 탭 제목 깜빡임 효과 시작
+        let blinkInterval = setInterval(() => {
+          document.title =
+            document.title === '⏰ 시간 종료!' ? ' ' : '⏰ 시간 종료!';
+          setFavicon(
+            document.title === '⏰ 시간 종료!'
+              ? '../public/icon/red-circle.svg'
+              : '../public/icon/blue-circle.svg'
+          );
+        }, 1000);
+
+        // 탭 제목 깜빡임 효과를 10초 후에 멈춤
+        setTimeout(() => {
+          clearInterval(blinkInterval);
+          document.title = '집중력을 위한 시간 관리 - 뽀모도로 타이머';
+          setFavicon('../public/icon/pomodoro.svg');
+        }, 10000);
+
         // 뽀모도로 사이클이 끝난 경우 새로운 타이머 설정
         if (startButton.classList.contains('break')) {
           startButton.classList.remove('break');
@@ -74,6 +92,7 @@ function startTimer() {
     } else {
       secondsDisplay.textContent = seconds.toString().padStart(2, '0');
     }
+    document.title = `${minutesDisplay.textContent}:${secondsDisplay.textContent} - 뽀모도로 타이머 (집중력을 위한 시간 관리)`;
   }, 1000);
 }
 
@@ -87,3 +106,14 @@ resetButton.addEventListener('click', () => {
   minutesDisplay.textContent = '25';
   secondsDisplay.textContent = '00';
 });
+
+// Favicon 설정 함수
+function setFavicon(faviconPath) {
+  const link =
+    document.querySelector("link[rel*='icon']") ||
+    document.createElement('link');
+  link.type = 'image/x-icon';
+  link.rel = 'shortcut icon';
+  link.href = faviconPath;
+  document.getElementsByTagName('head')[0].appendChild(link);
+}
