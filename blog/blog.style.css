@@ -233,3 +233,12 @@ p em {
   font-size: 18px;
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  .home-button {
+    position: static;
+  }
+  main {
+    margin-top: 200px;
+  }
+}
