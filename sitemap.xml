@@ -118,8 +118,33 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/chart/money-history.html</loc>
-  <lastmod>2023-04-20T11:17:08+00:00</lastmod>
+  <loc>https://myeverythingservice.site/blog/money-history.html</loc>
+  <lastmod>2023-04-23T11:17:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/blog/money-book.html</loc>
+  <lastmod>2023-04-23T11:17:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/blog/money-free.html</loc>
+  <lastmod>2023-04-23T11:17:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/blog/stock.html</loc>
+  <lastmod>2023-04-24T11:17:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/blog/stock-info.html</loc>
+  <lastmod>2023-04-24T11:17:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/blog/stock-voca.html</loc>
+  <lastmod>2023-04-24T11:17:08+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
