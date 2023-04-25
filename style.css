@@ -23,6 +23,36 @@ header h1 {
   color: white;
 }
 
+.category-btn-wrapper {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.category-btn-wrapper button {
+  background-color: white;
+  border: 2px solid #ccc;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+/* 버튼 호버 스타일 */
+.category-btn-wrapper button:hover {
+  border-color: #777;
+  color: #555;
+}
+
 main {
   display: flex;
   gap: 20px;
