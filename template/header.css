@@ -1,0 +1,125 @@
+/* 공통 스타일 */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 네비게이션 메뉴 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu.desktop {
+  display: flex;
+}
+
+.nav-menu.desktop li {
+  position: relative;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.nav-menu.desktop li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu.desktop a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu.desktop li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  padding: 5px;
+  left: 0;
+  margin-top: 5px;
+  width: 100%;
+  z-index: 100;
+}
+
+/* 서브 메뉴 */
+.submenu li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.submenu li:last-child {
+  margin-bottom: 0;
+}
+
+.submenu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 모바일 네비게이션 메뉴 */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.submenu.active {
+  display: block;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  .nav-menu.desktop {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .mobile-menu li {
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+
+  .mobile-menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  .mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
