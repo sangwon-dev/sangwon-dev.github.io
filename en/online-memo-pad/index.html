@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Online Notepad</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="An easy-to-use online notepad service that allows you to apply text formatting and download images."
+    />
+    <meta
+      name="keywords"
+      content="online notepad, notepad, text editor, web notepad, free notepad, online notepad free, free online notepad"
+    />
+    <meta name="author" content="comccaneer" />
+    <link
+      rel="canonical"
+      href="http://myeverythingservice.site/online-notepad"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://myeverythingservice.site/online-notepad"
+    />
+    <meta property="og:title" content="Simple Online Notepad" />
+    <meta
+      property="og:description"
+      content="An easy-to-use online notepad service that allows you to apply text formatting and download images."
+    />
+    <meta
+      property="og:image"
+      content="https://myeverythingservice.site/public/img/memoimg.jpg"
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../public/icon/ic-memo.svg"
+    />
+    <!-- Add Quill.js stylesheet -->
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WN4DKS5TCZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WN4DKS5TCZ');
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6451550267398782"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Add Quill.js script -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Simple Online Notepad</h1>
+    </header>
+    <section class="container">
+      <!-- Create a toolbar container -->
+      <div id="toolbar">
+        <button class="ql-bold">Bold</button>
+        <button class="ql-italic">Italic</button>
+        <button class="ql-underline">Underline</button>
+        <button class="ql-strike">Strike</button>
+        <select class="ql-color">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="orange">Orange</option>
+          <option value="violet">Violet</option>
+          <option value="#d0d1d2">Grey</option>
+          <option value="">Remove color</option>
+        </select>
+      </div>
+      <!-- Create an editor container -->
+      <div id="editor"></div>
+      <div class="btn-wrapper">
+        <button id="downloadTxtBtn">Download as txt</button>
+        <button id="downloadJpgBtn">Download as jpg</button>
+      </div>
+
+      <section class="editor-description">
+        <h1>How to Use the Online Notepad Features</h1>
+        <article>
+          <p>
+            This online notepad is a tool that allows users to easily write and
+            save notes in their web browser. Users can enter text and apply
+            various formatting options to the text. The main features of this
+            notepad are as follows.
+          </p>
+
+          <h2>1. Text Input and Editing</h2>
+          <p>
+            Users can enter and edit the desired text in the text box. The text
+            automatically wraps, not exceeding the maximum text width.
+          </p>
+
+          <h2>2. Formatting Options</h2>
+          <p>
+            The text editor provides various formatting options. Using these
+            options, you can apply bold, italic, underline, strikethrough to the
+            text and change the text color.
+          </p>
+
+          <h2>3. Downloading Notes</h2>
+          <p>
+            The created notes can be downloaded as a text file (txt) or image
+            file (jpg). When downloading as an image file, users can receive a
+            memo with the selected background image and applied formatting.
+          </p>
+
+          <h2>4. User-friendly Interface</h2>
+          <p>
+            The online notepad provides an intuitive interface for users.
+            Functions such as note creation, formatting application, and file
+            download are designed to be easily understood and used by users.
+          </p>
+
+          <h2>5. Security</h2>
+          <p>
+            Rest assured! The website provider has no idea what words you are
+            writing. Because I am a complete fool.
+          </p>
+
+          <p>
+            Since this online notepad can be used directly in a web browser, you
+            can write and manage notes anytime, anywhere without installing
+            additional software. Easily create a memo, apply formatting, and
+            download it in your preferred file format.
+          </p>
+        </article>
+      </section>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
