@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Online Notepad</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../template/function-header.css" />
     <!-- SEO Meta Tags -->
     <meta
       name="description"
@@ -70,7 +71,47 @@
   </head>
   <body>
     <header>
-      <h1>Simple Online Notepad</h1>
+      <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <li class="active">
+              <a href="./index.html">NotePad</a>
+            </li>
+            <li>
+              <a href="../../calc_en/index.html"
+                >Compound Interest Calculator</a
+              >
+            </li>
+            <li><a href="../../chart/index.html">Chart generator</a></li>
+            <li><a href="../../todolist_en/index.html">ToDoList</a></li>
+            <li>
+              <a href="../../pomodoro_en/index.html">POMODORO</a>
+            </li>
+            <li>
+              <a href="../../password_en/index.html">Password Generator</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="show-more" onclick="toggleShowMore()">+</button>
+      <div class="more-items" id="more-items">
+        <ul>
+          <li class="active">
+            <a href="./index.html">NotePad</a>
+          </li>
+          <li>
+            <a href="../../calc_en/index.html">Compound Interest Calculator</a>
+          </li>
+          <li><a href="../../chart/index.html">Chart generator</a></li>
+          <li><a href="../../todolist_en/index.html">ToDoList</a></li>
+          <li>
+            <a href="../../pomodoro_en/index.html">POMODORO</a>
+          </li>
+          <li>
+            <a href="../../password_en/index.html">Password Generator</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <section class="container">
       <!-- Create a toolbar container -->
@@ -149,5 +190,6 @@
       </section>
     </section>
     <script src="./script.js"></script>
+    <script src="../../template/function-header.js"></script>
   </body>
 </html>

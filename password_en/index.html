@@ -26,7 +26,8 @@
       content="password generator, password creation, random password"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../internal-link.css" />
+    <link rel="stylesheet" href="../template/function-header.css" />
+
     <link rel="icon" type="image/svg+xml" href="../public/icon/password.svg" />
     <!-- Google tag (gtag.js) -->
     <script
@@ -50,7 +51,46 @@
   </head>
   <body>
     <header>
-      <h1>Password Generator</h1>
+      <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <!-- Add more list items with appropriate links -->
+            <li class="active">
+              <a href="./index.html">Password Generator</a>
+            </li>
+            <li>
+              <a href="../pomodoro_en/index.html">POMODORO</a>
+            </li>
+            <li><a href="../todolist_en/index.html">ToDoList</a></li>
+            <li><a href="../chart/index.html">Chart generator</a></li>
+            <li>
+              <a href="../calc_en/index.html">Compound Interest Calculator</a>
+            </li>
+            <li>
+              <a href="../en/online-notepad/index.html">NotePad</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="show-more" onclick="toggleShowMore()">+</button>
+      <div class="more-items" id="more-items">
+        <ul>
+          <li class="active">
+            <a href="./index.html">Password Generator</a>
+          </li>
+          <li>
+            <a href="../pomodoro_en/index.html">POMODORO</a>
+          </li>
+          <li><a href="../todolist_en/index.html">ToDoList</a></li>
+          <li><a href="../chart/index.html">Chart generator</a></li>
+          <li>
+            <a href="../calc_en/index.html">Compound Interest Calculator</a>
+          </li>
+          <li>
+            <a href="../en/online-notepad/index.html">NotePad</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <div class="container2">
@@ -66,25 +106,7 @@
         </div>
       </div>
     </main>
-    <section class="interner-link-container">
-      <div class="box">
-        <h2 class="title">Explore Other Features</h2>
-        <ul class="link-list">
-          <li>
-            <span class="link-name">Compound Interest Calculator</span>
-            <a class="link" href="../calc_en/index.html">Go</a>
-          </li>
-          <li>
-            <span class="link-name">To-Do List</span>
-            <a class="link" href="../todolist_en/index.html">Go</a>
-          </li>
-          <li>
-            <span class="link-name">Pomodoro Timer</span>
-            <a class="link" href="../pomodoro_en/index.html">Go</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <script src="../template/function-header.js"></script>
   </body>
 </html>

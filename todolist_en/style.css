@@ -49,12 +49,12 @@ button:hover {
   background-color: #45a049;
 }
 
-ul {
+#todoList {
   list-style-type: none;
   padding: 0;
 }
 
-li {
+#todoList li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -65,7 +65,7 @@ li {
   margin-bottom: 5px;
 }
 
-li span {
+#todoList li span {
   flex-basis: 100%;
   margin-bottom: 10px;
 }

@@ -27,6 +27,7 @@
     />
     <title>Todo List | 할일목록 작성</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../template/function-header.css" />
     <link rel="icon" type="image/svg+xml" href="../public/icon/todolist.svg" />
     <!-- Google tag (gtag.js) -->
     <script
@@ -50,7 +51,37 @@
   </head>
   <body>
     <header>
-      <h1>Todo List | 할일목록 작성</h1>
+      <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <!-- Add more list items with appropriate links -->
+            <li class="active"><a href="./index.html">투두리스트</a></li>
+            <li><a href="../pomodoro/index.html">온라인 뽀모도로</a></li>
+            <li><a href="../password/index.html">패스워드 생성시</a></li>
+            <li><a href="../launchmenu/index.html">점심메뉴추천</a></li>
+            <li><a href="../calc/index.html">복리 계산기</a></li>
+            <li><a href="../clocks/index.html">세계 시각</a></li>
+            <li><a href="../lotto/index.html">로또번호생성</a></li>
+            <li><a href="../online-notepad/index.html">온라인메모장</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button class="show-more" onclick="toggleShowMore()">+</button>
+      <div class="more-items" id="more-items">
+        <ul>
+          <li class="active"><a href="./index.html">투두리스트</a></li>
+          <li><a href="../pomodoro/index.html">온라인 뽀모도로</a></li>
+          <li>
+            <a href="../password/index.html">패스워드 생성시</a>
+          </li>
+          <li><a href="../launchmenu/index.html">점심메뉴추천</a></li>
+          <li><a href="../calc/index.html">복리 계산기</a></li>
+          <li><a href="../clocks/index.html">세계 시각</a></li>
+          <li><a href="../lotto/index.html">로또번호생성</a></li>
+          <li><a href="../online-notepad/index.html">온라인메모장</a></li>
+          <li><a href="../todolist/index.html">투두리스트</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <form id="addTaskForm">
@@ -65,5 +96,6 @@
       <ul id="todoList"></ul>
     </main>
     <script src="./script.js"></script>
+    <script src="../template/function-header.js"></script>
   </body>
 </html>

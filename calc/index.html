@@ -27,7 +27,7 @@
     />
     <title>복리 계산기</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../internal-link.css" />
+    <link rel="stylesheet" href="../template/function-header.css" />
     <link rel="icon" type="image/svg+xml" href="../public/icon/calc.svg" />
     <!-- Google tag (gtag.js) -->
     <script
@@ -51,7 +51,34 @@
   </head>
   <body>
     <header>
-      <h1>복리 계산기</h1>
+      <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <!-- Add more list items with appropriate links -->
+            <li class="active"><a href="./index.html">복리 계산기</a></li>
+            <li><a href="../clocks/index.html">세계 시각</a></li>
+            <li><a href="../launchmenu/index.html">점심메뉴추천</a></li>
+            <li><a href="../lotto/index.html">로또번호생성</a></li>
+            <li><a href="../online-notepad/index.html">온라인메모장</a></li>
+            <li><a href="../password/index.html">패스워드 생성시</a></li>
+            <li><a href="../pomodoro/index.html">온라인 뽀모도로</a></li>
+            <li><a href="../todolist/index.html">투두리스트</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button class="show-more" onclick="toggleShowMore()">+</button>
+      <div class="more-items" id="more-items">
+        <ul>
+          <li class="active"><a href="./index.html">복리 계산기</a></li>
+          <li><a href="../clocks/index.html">세계 시각</a></li>
+          <li><a href="../launchmenu/index.html">점심메뉴추천</a></li>
+          <li><a href="../lotto/index.html">로또번호생성</a></li>
+          <li><a href="../online-notepad/index.html">온라인메모장</a></li>
+          <li><a href="../password/index.html">패스워드 생성시</a></li>
+          <li><a href="../pomodoro/index.html">온라인 뽀모도로</a></li>
+          <li><a href="../todolist/index.html">투두리스트</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <form id="calculator">
@@ -91,34 +118,7 @@
       </table>
     </main>
 
-    <section class="interner-link-container">
-      <div class="box">
-        <h2 class="title">다른 기능 살펴보기</h2>
-        <ul class="link-list">
-          <li>
-            <span class="link-name">로또번호 생성기</span>
-            <a class="link" href="../lotto/index.html">바로가기</a>
-          </li>
-          <li>
-            <span class="link-name">패스워드 발급기</span>
-            <a class="link" href="../password/index.html">바로가기</a>
-          </li>
-          <li>
-            <span class="link-name">랜덤 점심 메뉴 추천</span>
-            <a class="link" href="../launchmenu/index.html">바로가기</a>
-          </li>
-          <li>
-            <span class="link-name">투두리스트</span>
-            <a class="link" href="../todolist/index.html">바로가기</a>
-          </li>
-          <li>
-            <span class="link-name">뽀모도로</span>
-            <a class="link" href="../pomodoro/index.html">바로가기</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <script src="./script.js"></script>
+    <script src="../template/function-header.js"></script>
   </body>
 </html>
