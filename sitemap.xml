@@ -126,6 +126,9 @@
 <url>
   <loc>https://myeverythingservice.site/en/todolist/index.html</loc>
 </url>
+<url>
+  <loc>https://myeverythingservice.site/en/meditation/index.html</loc>
+</url>
 <!-- ENGLISH SERVICE END -->
 
 <!-- JAPANESE SERVICE START -->
@@ -140,6 +143,9 @@
 </url>
 <url>
   <loc>https://myeverythingservice.site/jp/pomodoro/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/jp/meditation/index.html</loc>
 </url>
 <!-- JAPANESE SERVICE END -->
 
