@@ -10,6 +10,7 @@
 <url>
   <loc>https://myeverythingservice.site/</loc>
 </url>
+<!-- BLOG START -->
 <url>
   <loc>https://myeverythingservice.site/blog/welfare.html</loc>
 </url>
@@ -31,48 +32,7 @@
 <url>
   <loc>https://myeverythingservice.site/blog/worklifebalance.html</loc>
 </url>
-<url>
-  <loc>https://myeverythingservice.site/calc/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/en/calc/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/jp/calc/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/pomodoro/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/en/pomodoro/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/jp/pomodoro/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/todolist/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/en/todolist/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/password/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/en/password/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/jp/password/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/lotto/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/launchmenu/index.html</loc>
-</url>
-<url>
-  <loc>https://myeverythingservice.site/chart/index.html</loc>
-</url>
+
 <url>
   <loc>https://myeverythingservice.site/blog/money-history.html</loc>
 </url>
@@ -112,18 +72,69 @@
   <loc>https://myeverythingservice.site/blog/independent.html</loc>
 </url>
 
+<!-- BLOG END -->
+
+<!-- KOREAN SERVICE START-->
+<url>
+  <loc>https://myeverythingservice.site/calc/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/pomodoro/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/todolist/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/password/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/lotto/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/launchmenu/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/chart/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/online-notepad/index.html</loc>
+</url>
+<!-- KOREAN SERVICE END-->
+
+<!-- ENGLISH SERVICE START -->
+<url>
+  <loc>https://myeverythingservice.site/en/calc/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/en/chart/index.html</loc>
+</url>
 <url>
   <loc>https://myeverythingservice.site/en/online-notepad/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/en/password/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/en/pomodoro/index.html</loc>
+</url>
+<url>
+  <loc>https://myeverythingservice.site/en/todolist/index.html</loc>
+</url>
+<!-- ENGLISH SERVICE END -->
+
+<!-- JAPANESE SERVICE START -->
+<url>
+  <loc>https://myeverythingservice.site/jp/calc/index.html</loc>
 </url>
 <url>
   <loc>https://myeverythingservice.site/jp/online-notepad/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/online-notepad/index.html</loc>
+  <loc>https://myeverythingservice.site/jp/password/index.html</loc>
 </url>
-
 <url>
-  <loc>https://myeverythingservice.site/clocks/index.html</loc>
+  <loc>https://myeverythingservice.site/jp/pomodoro/index.html</loc>
 </url>
+<!-- JAPANESE SERVICE END -->
 
 </urlset>
