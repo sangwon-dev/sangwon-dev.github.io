@@ -44,7 +44,7 @@
   <loc>https://myeverythingservice.site/pomodoro/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/pomodoro_en/index.html</loc>
+  <loc>https://myeverythingservice.site/en/pomodoro/index.html</loc>
 </url>
 <url>
   <loc>https://myeverythingservice.site/pomodoro_jp/index.html</loc>
@@ -59,10 +59,10 @@
   <loc>https://myeverythingservice.site/password/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/password_en/index.html</loc>
+  <loc>https://myeverythingservice.site/en/password/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/password_jp/index.html</loc>
+  <loc>https://myeverythingservice.site/jp/password/index.html</loc>
 </url>
 <url>
   <loc>https://myeverythingservice.site/lotto/index.html</loc>

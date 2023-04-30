@@ -24,8 +24,9 @@
     />
     <title>複利計算機</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../template/function-header.css" />
 
-    <link rel="icon" type="image/svg+xml" href="../public/icon/calc.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../public/icon/calc.svg" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -48,7 +49,41 @@
   </head>
   <body>
     <header>
-      <h1>複利計算機</h1>
+      <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <li class="active"><a href="./index.html">複利計算機</a></li>
+            <li>
+              <a href="../pomodoro/index.html">POMODORO</a>
+            </li>
+            <li>
+              <a href="../password/index.html">パスワードジェネレーター</a>
+            </li>
+            <li>
+              <a href="../online-notepad/index.html"
+                >シンプルなオンラインノートパッド</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="show-more" onclick="toggleShowMore()">+</button>
+      <div class="more-items" id="more-items">
+        <ul>
+          <li class="active"><a href="./index.html">複利計算機</a></li>
+          <li>
+            <a href="../pomodoro/index.html">POMODORO</a>
+          </li>
+          <li>
+            <a href="../password/index.html">パスワードジェネレーター</a>
+          </li>
+          <li>
+            <a href="../online-notepad/index.html"
+              >シンプルなオンラインノートパッド</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <form id="calculator">
@@ -86,5 +121,6 @@
       </table>
     </main>
     <script src="./script.js"></script>
+    <script src="../../template/function-header.js"></script>
   </body>
 </html>

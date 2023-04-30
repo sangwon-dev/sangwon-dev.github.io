@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>シンプルなオンラインノートパッド</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../template/function-header.css" />
     <!-- SEO Meta Tags -->
     <meta
       name="description"
@@ -71,7 +72,37 @@
   <!-- ... -->
   <body>
     <header>
-      <h1>シンプルなオンラインノートパッド</h1>
+      <nav class="navbar" id="navbar">
+        <div class="nav-wrapper">
+          <ul class="nav-list">
+            <li class="active">
+              <a href="./index.html">シンプルなオンラインノートパッド</a>
+            </li>
+            <li><a href="../calc/index.html">複利計算機</a></li>
+            <li>
+              <a href="../pomodoro/index.html">POMODORO</a>
+            </li>
+            <li>
+              <a href="../password/index.html">パスワードジェネレーター</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="show-more" onclick="toggleShowMore()">+</button>
+      <div class="more-items" id="more-items">
+        <ul>
+          <li class="active">
+            <a href="./index.html">シンプルなオンラインノートパッド</a>
+          </li>
+          <li><a href="../calc/index.html">複利計算機</a></li>
+          <li>
+            <a href="../pomodoro/index.html">POMODORO</a>
+          </li>
+          <li>
+            <a href="../password/index.html">パスワードジェネレーター</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <section class="container">
       <!-- Create a toolbar container -->
@@ -136,5 +167,6 @@
       </section>
     </section>
     <script src="./script.js"></script>
+    <script src="../../template/function-header.js"></script>
   </body>
 </html>

@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator</title>
+    <title>パスワードジェネレーター</title>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Password Generator" />
+    <meta property="og:title" content="パスワードジェネレーター" />
     <meta
       property="og:image"
       content="https://myeverythingservice.site/public/img/password-og2.png"
     />
-    <meta name="title" content="Random Password Generator" />
-    <meta name="subject" content="Random Password Generator" />
+    <meta name="title" content="ランダムパスワード生成" />
+    <meta name="subject" content="ランダムパスワード生成" />
     <meta name="author" content="comccaneer" />
     <meta
       property="og:description"
-      content="A password generator that creates random passwords for you."
+      content="ランダムパスワードを生成するパスワードジェネレーターです。"
     />
     <meta
       name="description"
-      content="A password generator that creates random passwords for you."
+      content="ランダムパスワードを生成するパスワードジェネレーターです。"
     />
     <meta
       name="keywords"
-      content="password generator, password creation, random password"
+      content="パスワードジェネレーター, パスワード生成, ランダムパスワード"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../template/function-header.css" />
+    <link rel="stylesheet" href="../../template/function-header.css" />
 
-    <link rel="icon" type="image/svg+xml" href="../public/icon/password.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../public/icon/password.svg"
+    />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -40,7 +44,6 @@
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
       gtag('config', 'G-WN4DKS5TCZ');
     </script>
     <script
@@ -54,20 +57,17 @@
       <nav class="navbar" id="navbar">
         <div class="nav-wrapper">
           <ul class="nav-list">
-            <!-- Add more list items with appropriate links -->
             <li class="active">
-              <a href="./index.html">Password Generator</a>
+              <a href="./index.html">パスワードジェネレーター</a>
             </li>
             <li>
-              <a href="../pomodoro_en/index.html">POMODORO</a>
+              <a href="../online-notepad/index.html"
+                >シンプルなオンラインノートパッド</a
+              >
             </li>
-            <li><a href="../todolist_en/index.html">ToDoList</a></li>
-            <li><a href="../chart/index.html">Chart generator</a></li>
+            <li><a href="../calc/index.html">複利計算機</a></li>
             <li>
-              <a href="../calc_en/index.html">Compound Interest Calculator</a>
-            </li>
-            <li>
-              <a href="../en/online-notepad/index.html">NotePad</a>
+              <a href="../pomodoro/index.html">POMODORO</a>
             </li>
           </ul>
         </div>
@@ -76,18 +76,16 @@
       <div class="more-items" id="more-items">
         <ul>
           <li class="active">
-            <a href="./index.html">Password Generator</a>
+            <a href="./index.html">パスワードジェネレーター</a>
           </li>
           <li>
-            <a href="../pomodoro_en/index.html">POMODORO</a>
+            <a href="../online-notepad/index.html"
+              >シンプルなオンラインノートパッド</a
+            >
           </li>
-          <li><a href="../todolist_en/index.html">ToDoList</a></li>
-          <li><a href="../chart/index.html">Chart generator</a></li>
+          <li><a href="../calc/index.html">複利計算機</a></li>
           <li>
-            <a href="../calc_en/index.html">Compound Interest Calculator</a>
-          </li>
-          <li>
-            <a href="../en/online-notepad/index.html">NotePad</a>
+            <a href="../pomodoro/index.html">POMODORO</a>
           </li>
         </ul>
       </div>
@@ -99,14 +97,14 @@
             type="text"
             id="password"
             readonly
-            placeholder="Password appears here"
+            placeholder="パスワードが表示される場所"
           />
-          <button id="generateBtn">Generate</button>
-          <button id="copyBtn">Copy</button>
+          <button id="generateBtn">生成する</button>
+          <button id="copyBtn">コピーする</button>
         </div>
       </div>
     </main>
     <script src="./script.js"></script>
-    <script src="../template/function-header.js"></script>
+    <script src="../../template/function-header.js"></script>
   </body>
 </html>
