@@ -35,10 +35,10 @@
   <loc>https://myeverythingservice.site/calc/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/calc_en/index.html</loc>
+  <loc>https://myeverythingservice.site/en/calc/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/calc_jp/index.html</loc>
+  <loc>https://myeverythingservice.site/jp/calc/index.html</loc>
 </url>
 <url>
   <loc>https://myeverythingservice.site/pomodoro/index.html</loc>
@@ -47,13 +47,13 @@
   <loc>https://myeverythingservice.site/en/pomodoro/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/pomodoro_jp/index.html</loc>
+  <loc>https://myeverythingservice.site/jp/pomodoro/index.html</loc>
 </url>
 <url>
   <loc>https://myeverythingservice.site/todolist/index.html</loc>
 </url>
 <url>
-  <loc>https://myeverythingservice.site/todolist_en/index.html</loc>
+  <loc>https://myeverythingservice.site/en/todolist/index.html</loc>
 </url>
 <url>
   <loc>https://myeverythingservice.site/password/index.html</loc>
