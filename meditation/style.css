@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+header {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2ad596;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.video-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#meditation-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.controls button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+}
+
+.controls button:focus {
+  outline: none;
+}
+
+.meditation-button {
+  display: inline-block;
+  background-color: #3f51b5;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 30px;
+  margin: 5px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meditation-button:hover {
+  background-color: #283593;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#meditation-guide {
+  max-width: 800px;
+  margin: 100px auto 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+}
+
+#meditation-guide h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+#meditation-guide ol {
+  padding-left: 30px;
+}
+
+#meditation-guide li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  /* 화면이 767px 이하일 때 적용될 스타일 */
+  /* 예시: 버튼 크기 조정 */
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
