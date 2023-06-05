@@ -31,6 +31,9 @@
   color: white;
   background-color: #4caf50;
 }
+.card2 {
+  background-color: dodgerblue;
+}
 .disabled {
   pointer-events: none;
   opacity: 0.6;
