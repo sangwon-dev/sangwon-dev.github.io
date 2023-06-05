@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>팀 뽑기</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>밍글 자리 정하기</title>
   </head>
   <body>
-    <div id="container">
-      <h1>팀 뽑기!</h1>
-      <div id="form">
-        <input
-          type="number"
-          id="teamNumber"
-          placeholder="팀의 수를 입력해주세요."
-        />
-        <button id="lotteryButton" onclick="lottery()">팀 뽑기</button>
-      </div>
-      <div id="ballContainer"></div>
+    <div class="button-container">
+      <button style="background-color: #f94144" onclick="showGame(1)">1</button>
+      <button style="background-color: #f3722c" onclick="showGame(2)">2</button>
+      <button style="background-color: #f8961e" onclick="showGame(3)">3</button>
+      <button style="background-color: #f9c74f" onclick="showGame(4)">4</button>
+      <button style="background-color: #90be6d" onclick="showGame(5)">5</button>
+      <button style="background-color: #43aa8b" onclick="showGame(6)">6</button>
+      <button style="background-color: #577590" onclick="showGame(7)">7</button>
+      <button style="background-color: #6d597a" onclick="showGame(8)">8</button>
+      <button style="background-color: #b56576" onclick="showGame(9)">9</button>
+      <button style="background-color: #e56b6f" onclick="showGame(10)">
+        10
+      </button>
     </div>
-    <script src="script.js"></script>
+    <div id="game-1" class="card-container">
+      <div class="card" onclick="selectOption(this)">짜장</div>
+      <div class="card" onclick="selectOption(this)">짬뽕</div>
+    </div>
+    <div id="game-2" class="card-container">
+      <div class="card" onclick="selectOption(this)">탕수육</div>
+      <div class="card" onclick="selectOption(this)">깐풍기</div>
+    </div>
+    <div id="game-3" class="card-container">
+      <div class="card" onclick="selectOption(this)">부먹</div>
+      <div class="card" onclick="selectOption(this)">찍먹</div>
+    </div>
+    <div id="game-4" class="card-container">
+      <div class="card" onclick="selectOption(this)">비빔밥</div>
+      <div class="card" onclick="selectOption(this)">불고기</div>
+    </div>
+    <div id="game-5" class="card-container">
+      <div class="card" onclick="selectOption(this)">소주</div>
+      <div class="card" onclick="selectOption(this)">맥주</div>
+    </div>
+    <div id="game-6" class="card-container">
+      <div class="card" onclick="selectOption(this)">삼겹살</div>
+      <div class="card" onclick="selectOption(this)">갈비</div>
+    </div>
+    <div id="game-7" class="card-container">
+      <div class="card" onclick="selectOption(this)">김치찌개</div>
+      <div class="card" onclick="selectOption(this)">된장찌개</div>
+    </div>
+    <div id="game-8" class="card-container">
+      <div class="card" onclick="selectOption(this)">피자</div>
+      <div class="card" onclick="selectOption(this)">파스타</div>
+    </div>
+    <div id="game-9" class="card-container">
+      <div class="card" onclick="selectOption(this)">치킨</div>
+      <div class="card" onclick="selectOption(this)">피자</div>
+    </div>
+    <div id="game-10" class="card-container">
+      <div class="card" onclick="selectOption(this)">아이스크림</div>
+      <div class="card" onclick="selectOption(this)">빙수</div>
+    </div>
+
+    <!-- Duplicate the game card container and modify for other games -->
+    <script src="./script.js"></script>
   </body>
 </html>

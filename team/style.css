@@ -1,63 +1,37 @@
-body {
+.button-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #eee;
-  font-family: Arial, sans-serif;
-  overflow: hidden;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
 }
-
-#container {
-  text-align: center;
-}
-
-h1 {
-  color: #333;
-}
-
-#form {
-  margin-top: 20px;
-}
-
-#teamNumber {
-  width: 200px;
-  height: 40px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  padding: 0 20px;
-  font-size: 16px;
-}
-
-#lotteryButton {
-  margin-left: 10px;
-  height: 40px;
-  width: 100px;
-  background-color: #009688;
-  color: white;
+.button-container button {
+  width: 45%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 20px;
   border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-#ballContainer {
-  perspective: 800px;
-  height: 300px;
-  position: relative;
-}
-
-.ball {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  position: absolute;
-  left: calc(50% - 25px);
-  top: calc(50% - 25px);
-  background-color: red;
+  border-radius: 10px;
   color: white;
-  display: flex;
+}
+.card-container {
+  display: none;
   justify-content: center;
-  align-items: center;
-  font-weight: bold;
+  padding: 20px;
+}
+.card {
+  border: 1px solid black;
+  width: calc(50% - 20px);
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #4caf50;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
 }
